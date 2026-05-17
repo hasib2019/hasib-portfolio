@@ -1,6 +1,6 @@
-import { personalInfo } from "@/data/portfolio";
+import type { PersonalInfo } from "@/lib/types";
 
-export default function Contact() {
+export default function Contact({ personalInfo }: { personalInfo: PersonalInfo }) {
   const contactItems = [
     {
       icon: (

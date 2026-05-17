@@ -1,0 +1,322 @@
+{
+  "personalInfo": {
+    "name": "Md. Hasibuzzaman",
+    "title": "Associate Software Engineer & Project Tech Lead",
+    "tagline": "Traveler, Learner and Believer",
+    "email": "hasib.9437.hu@gmail.com",
+    "phone": "+8801738-356180",
+    "website": "https://www.hasibuzzaman.com",
+    "github": "https://github.com/hasib2019",
+    "linkedin": "https://www.linkedin.com/in/md-hasibuzzaman-82014b156/",
+    "facebook": "https://www.facebook.com/hasib.uzzaman.106/",
+    "location": "217/1, 3rd Colony, Lalkuthi, Mirpur-1, Dhaka-1216, Bangladesh",
+    "bloodGroup": "A+",
+    "summary": "With a successful track record of 5+ years in software engineering, I thrive in fast-paced and deadline-driven environments. My expertise lies in ASP.NET, NodeJS, ReactJS, NextJS, PHP, Laravel, MySQL, PgSQL, MsSQL and AWS technologies. Possessing strong leadership skills, I am known for my honesty, commitment, and dedication to every project I undertake.",
+    "availableForWork": true,
+    "footerCredit": "Developed by <a href=\"https://www.creativeitbari.com\">Creativeitbari</a>"
+  },
+  "experiences": [
+    {
+      "id": 1,
+      "role": "Associate Software Engineer (Project Tech Lead)",
+      "company": "Era InfoTech Ltd",
+      "location": "Fareast Tower, 35 Topkhana Road, Dhaka",
+      "duration": "September 2021 – Present",
+      "current": true,
+      "technologies": [
+        "NodeJS",
+        "ReactJS",
+        "NextJS",
+        "Laravel",
+        "HTML5",
+        "CSS3",
+        "Bootstrap 5+",
+        "Material UI",
+        "PHP",
+        "PostgreSQL",
+        "MySQL",
+        "JavaScript",
+        "TypeScript",
+        "jQuery"
+      ],
+      "description": "Leading development of enterprise-grade government and commercial web applications, managing full-stack development with modern JavaScript frameworks and cloud services."
+    },
+    {
+      "id": 2,
+      "role": "Web Developer",
+      "company": "Linkin Group",
+      "location": "60 Feet, Mirpur, Dhaka",
+      "duration": "June 2020 – August 2021",
+      "current": false,
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "Bootstrap 4+",
+        "PHP",
+        "Laravel",
+        "WordPress",
+        "MySQL",
+        "JavaScript",
+        "jQuery",
+        "Ajax"
+      ],
+      "description": "Developed and maintained responsive web applications and WordPress sites for multiple clients using PHP/Laravel stack."
+    },
+    {
+      "id": 3,
+      "role": "Junior Web Developer",
+      "company": "Habro Systems Limited",
+      "location": "Gulshan-1, Dhaka",
+      "duration": "July 2019 – April 2020",
+      "current": false,
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "Bootstrap 4+",
+        "PHP",
+        "Laravel",
+        "WordPress",
+        "MySQL",
+        "JavaScript",
+        "jQuery",
+        "Ajax"
+      ],
+      "description": "Built and maintained web applications, e-commerce platforms, and CMS-based websites for clients across various industries."
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Rural Development & Co-operative Division Automation",
+      "company": "Era InfoTech Ltd (Joint Venture with Orange BD Ltd)",
+      "type": "Government Project",
+      "description": "A large-scale government automation platform for the Rural Development and Co-operative Division of Bangladesh. Built with modern JavaScript stack enabling digital transformation of cooperative management.",
+      "technologies": [
+        "NodeJS",
+        "NextJS",
+        "TypeScript",
+        "HTML5",
+        "CSS3",
+        "Material UI",
+        "JavaScript"
+      ],
+      "link": "https://coop.rdcd.gov.bd",
+      "linkLabel": "coop.rdcd.gov.bd",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "name": "Accounting Management System",
+      "company": "Individual Project",
+      "type": "Personal Project",
+      "description": "A comprehensive accounting management system with full financial reporting, invoicing, and bookkeeping features built with Core PHP.",
+      "technologies": [
+        "PHP",
+        "HTML5",
+        "CSS3",
+        "Bootstrap 4",
+        "JavaScript",
+        "jQuery",
+        "MySQL"
+      ],
+      "link": "http://accounting.creativeitbari.com",
+      "linkLabel": "accounting.creativeitbari.com",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "name": "eHavene E-commerce Platform",
+      "company": "Client Project",
+      "type": "E-commerce",
+      "description": "Full-featured e-commerce platform built with Laravel featuring product catalog, cart, checkout, and order management.",
+      "technologies": [
+        "Laravel",
+        "PHP",
+        "HTML5",
+        "CSS3",
+        "Bootstrap 4",
+        "JavaScript",
+        "jQuery",
+        "MySQL"
+      ],
+      "link": "https://ehavene.com.bd/",
+      "linkLabel": "ehavene.com.bd",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "name": "Piara Bazar E-commerce",
+      "company": "Client Project",
+      "type": "E-commerce",
+      "description": "Online marketplace platform with multi-vendor support and complete shopping experience built on Laravel.",
+      "technologies": [
+        "Laravel",
+        "PHP",
+        "HTML5",
+        "CSS3",
+        "Bootstrap 4",
+        "JavaScript",
+        "jQuery",
+        "MySQL"
+      ],
+      "link": "http://piarabazar.com.bd/",
+      "linkLabel": "piarabazar.com.bd",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "name": "Apon Health Platform",
+      "company": "Client Project",
+      "type": "Healthcare",
+      "description": "Health services platform providing online consultations and healthcare product management.",
+      "technologies": [
+        "Laravel",
+        "PHP",
+        "HTML5",
+        "CSS3",
+        "Bootstrap 4",
+        "JavaScript",
+        "jQuery",
+        "MySQL"
+      ],
+      "link": "https://www.aponhealth.com/",
+      "linkLabel": "aponhealth.com",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "name": "MB Imports E-commerce",
+      "company": "Client Project",
+      "type": "E-commerce",
+      "description": "Import business e-commerce website with product catalog and order processing system.",
+      "technologies": [
+        "Laravel",
+        "PHP",
+        "HTML5",
+        "CSS3",
+        "Bootstrap 4",
+        "JavaScript",
+        "jQuery",
+        "MySQL"
+      ],
+      "link": "https://mbimports.com.bd/",
+      "linkLabel": "mbimports.com.bd",
+      "featured": false
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "degree": "Professional Masters in Information Technology",
+      "institution": "Jahangirnagar University",
+      "duration": "April 2022 – October 2024",
+      "gpa": "3.21",
+      "icon": "🎓"
+    },
+    {
+      "id": 2,
+      "degree": "Post Graduate Diploma in Information Technology",
+      "institution": "Jahangirnagar University",
+      "duration": "January 2020 – April 2021",
+      "gpa": "3.31",
+      "icon": "📜"
+    },
+    {
+      "id": 3,
+      "degree": "Diploma in Web Application Development with PHP Frameworks (WDPF)",
+      "institution": "IsDB-BISEW",
+      "duration": "February 2018 – April 2019",
+      "gpa": null,
+      "icon": "💻"
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "name": "AWS Certified Solutions Architect – Associate",
+      "issuer": "Amazon Web Services (AWS)",
+      "validationNo": "SQM5CXBBS1F1QX56",
+      "verifyUrl": "https://aws.amazon.com/verification",
+      "category": "Cloud"
+    },
+    {
+      "id": 2,
+      "name": "AWS Certified DevOps Engineer – Professional",
+      "issuer": "Amazon Web Services (AWS)",
+      "validationNo": "KY24XLBB51F1Q4WN",
+      "verifyUrl": "https://aws.amazon.com/verification",
+      "category": "Cloud"
+    },
+    {
+      "id": 3,
+      "name": "Advanced Certificate for Management Professionals (ACMP) 4.0",
+      "issuer": "Institute of Business Administration (IBA), Dhaka University",
+      "validationNo": null,
+      "verifyUrl": null,
+      "category": "Management"
+    },
+    {
+      "id": 4,
+      "name": "Cloud Computing with AWS",
+      "issuer": "EDGE Project – Bangladesh Computer Council (BCC), ICT Division",
+      "validationNo": null,
+      "verifyUrl": null,
+      "category": "Cloud"
+    },
+    {
+      "id": 5,
+      "name": "Think in a Redux Way",
+      "issuer": "Learn With Sumit",
+      "validationNo": null,
+      "verifyUrl": null,
+      "category": "Frontend"
+    }
+  ],
+  "skills": {
+    "Frontend": [
+      "ReactJS",
+      "NextJS",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "TypeScript",
+      "jQuery",
+      "Bootstrap 5",
+      "Material UI",
+      "Tailwind CSS"
+    ],
+    "Backend": [
+      "NodeJS",
+      "PHP",
+      "Laravel",
+      "ASP.NET",
+      "REST API",
+      "GraphQL"
+    ],
+    "Database": [
+      "PostgreSQL",
+      "MySQL",
+      "MSSQL"
+    ],
+    "Cloud & DevOps": [
+      "AWS (Solutions Architect)",
+      "AWS DevOps",
+      "EC2",
+      "S3",
+      "RDS",
+      "Lambda",
+      "Docker",
+      "Git",
+      "CI/CD"
+    ],
+    "Tools": [
+      "VS Code",
+      "Postman",
+      "GitHub",
+      "Jira",
+      "Figma",
+      "Redux",
+      "WordPress"
+    ]
+  }
+}

@@ -1,6 +1,6 @@
-import { experiences } from "@/data/portfolio";
+import type { Experience as ExperienceType } from "@/lib/types";
 
-export default function Experience() {
+export default function Experience({ experiences }: { experiences: ExperienceType[] }) {
   return (
     <section id="experience" className="section-padding bg-[#0f0f0f]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

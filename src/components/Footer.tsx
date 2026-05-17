@@ -1,6 +1,6 @@
-import { personalInfo } from "@/data/portfolio";
+import type { PersonalInfo } from "@/lib/types";
 
-export default function Footer() {
+export default function Footer({ personalInfo }: { personalInfo: PersonalInfo }) {
   const year = new Date().getFullYear();
 
   return (
@@ -53,10 +53,9 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-6 border-t border-[#2a2a2a] text-center">
-          <p className="text-[#6b6b6b] text-sm">
-            &copy; {year} Md. Hasibuzzaman. Built with{" "}
-            <span className="text-[#c0392b]">Next.js</span> &amp;{" "}
-            <span className="text-[#c0392b]">Tailwind CSS</span>.
+          <p className="text-[#6b6b6b] text-sm [&_a]:text-accent [&_a:hover]:text-accent-light [&_a]:transition-colors [&_a]:duration-200">
+            &copy; {year} {personalInfo.name}.{" "}
+            <span dangerouslySetInnerHTML={{ __html: personalInfo.footerCredit }} />
           </p>
         </div>
       </div>

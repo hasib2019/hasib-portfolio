@@ -1,5 +1,3 @@
-import { skills } from "@/data/portfolio";
-
 const categoryIcons: Record<string, string> = {
   Frontend: "🎨",
   Backend: "⚙️",
@@ -8,7 +6,7 @@ const categoryIcons: Record<string, string> = {
   Tools: "🛠️",
 };
 
-export default function Skills() {
+export default function Skills({ skills }: { skills: Record<string, string[]> }) {
   return (
     <section id="skills" className="section-padding bg-[#1a1a1a]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

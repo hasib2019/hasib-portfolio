@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import Providers from "@/components/Providers";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -228,7 +229,7 @@ export default function RootLayout({
         <meta name="ICBM" content="23.8041, 90.3556" />
       </head>
       <body className="antialiased bg-[#0f0f0f] text-[#f5f5f5]">
-        {children}
+        <Providers>{children}</Providers>
         <Analytics />
       </body>
     </html>

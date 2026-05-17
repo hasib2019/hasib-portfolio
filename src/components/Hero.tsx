@@ -1,6 +1,6 @@
-import { personalInfo } from "@/data/portfolio";
+import type { PersonalInfo } from "@/lib/types";
 
-export default function Hero() {
+export default function Hero({ personalInfo }: { personalInfo: PersonalInfo }) {
   return (
     <section
       id="hero"
@@ -29,13 +29,13 @@ export default function Hero() {
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
           Hi, I&apos;m{" "}
           <span className="gradient-text">
-            Md. Hasibuzzaman
+            {personalInfo.name}
           </span>
         </h1>
 
         {/* Title */}
         <p className="text-xl sm:text-2xl md:text-3xl text-[#a3a3a3] font-medium mb-4">
-          Software Engineer &amp; Project Tech Lead
+          {personalInfo.title}
         </p>
 
         {/* Tagline */}

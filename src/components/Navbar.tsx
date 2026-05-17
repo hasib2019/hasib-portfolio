@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { personalInfo } from "@/data/portfolio";
+import type { PersonalInfo } from "@/lib/types";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -14,7 +14,7 @@ const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
-export default function Navbar() {
+export default function Navbar({ personalInfo }: { personalInfo: PersonalInfo }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 

@@ -1,6 +1,6 @@
-import { projects } from "@/data/portfolio";
+import type { Project } from "@/lib/types";
 
-export default function Projects() {
+export default function Projects({ projects }: { projects: Project[] }) {
   const featured = projects.filter((p) => p.featured);
   const rest = projects.filter((p) => !p.featured);
 

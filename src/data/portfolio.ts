@@ -10,6 +10,7 @@ export const personalInfo = {
   facebook: "https://www.facebook.com/hasib.uzzaman.106/",
   location: "217/1, 3rd Colony, Lalkuthi, Mirpur-1, Dhaka-1216, Bangladesh",
   bloodGroup: "A+",
+  footerCredit: "Built with Next.js & Tailwind CSS",
   summary:
     "With a successful track record of 3+ years in software engineering, I thrive in fast-paced and deadline-driven environments. My expertise lies in ASP.NET, NodeJS, ReactJS, NextJS, PHP, Laravel, MySQL, PgSQL, MsSQL and AWS technologies. Possessing strong leadership skills, I am known for my honesty, commitment, and dedication to every project I undertake.",
 };

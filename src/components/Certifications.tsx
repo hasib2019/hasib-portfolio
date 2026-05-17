@@ -1,4 +1,4 @@
-import { certifications } from "@/data/portfolio";
+import type { Certification } from "@/lib/types";
 
 const categoryColors: Record<string, string> = {
   Cloud: "bg-blue-500/10 border-blue-500/20 text-blue-400",
@@ -6,7 +6,7 @@ const categoryColors: Record<string, string> = {
   Frontend: "bg-green-500/10 border-green-500/20 text-green-400",
 };
 
-export default function Certifications() {
+export default function Certifications({ certifications }: { certifications: Certification[] }) {
   return (
     <section id="certifications" className="section-padding bg-[#1a1a1a]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

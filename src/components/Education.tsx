@@ -1,6 +1,6 @@
-import { education } from "@/data/portfolio";
+import type { Education as EducationType } from "@/lib/types";
 
-export default function Education() {
+export default function Education({ education }: { education: EducationType[] }) {
   return (
     <section id="education" className="section-padding bg-[#0f0f0f]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

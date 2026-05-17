@@ -1,6 +1,6 @@
-import { personalInfo } from "@/data/portfolio";
+import type { PersonalInfo } from "@/lib/types";
 
-export default function About() {
+export default function About({ personalInfo }: { personalInfo: PersonalInfo }) {
   const stats = [
     { value: "3+", label: "Years Experience" },
     { value: "20+", label: "Projects Delivered" },

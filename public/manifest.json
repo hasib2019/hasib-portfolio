@@ -1,0 +1,26 @@
+{
+  "name": "Md. Hasibuzzaman — Portfolio",
+  "short_name": "Hasibuzzaman",
+  "description": "Portfolio of Md. Hasibuzzaman — Full-Stack Software Engineer & AWS Certified Architect based in Dhaka, Bangladesh.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#c0392b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["portfolio", "technology"],
+  "lang": "en-US"
+}

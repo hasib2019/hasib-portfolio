@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 
-export default function LoginPage() {
+function LoginForm() {
   const router = useRouter();
   const params = useSearchParams();
   const { data: session, status } = useSession();
@@ -51,7 +51,6 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-[#0f0f0f] flex items-center justify-center px-4">
       <div className="w-full max-w-md">
-        {/* Logo */}
         <div className="text-center mb-8">
           <Link href="/" className="text-2xl font-bold text-white">
             <span className="text-[#c0392b]">&lt;</span>Hasibuzzaman<span className="text-[#c0392b]">/&gt;</span>
@@ -115,5 +114,13 @@ export default function LoginPage() {
         </p>
       </div>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense>
+      <LoginForm />
+    </Suspense>
   );
 }

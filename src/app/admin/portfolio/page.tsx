@@ -136,7 +136,7 @@ export default function AdminPortfolioPage() {
                 <label className="block text-[#a3a3a3] text-sm font-medium mb-1">{field.label}</label>
                 <input
                   type="text"
-                  value={(data.personalInfo as Record<string, unknown>)[field.key] as string}
+                  value={(data.personalInfo as unknown as Record<string, string>)[field.key]}
                   onChange={(e) => updatePersonal(field.key, e.target.value)}
                   className="w-full bg-[#0f0f0f] border border-[#2a2a2a] text-white rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#c0392b] transition-colors"
                 />
@@ -311,7 +311,7 @@ function ExperienceForm({ item, onSave, onCancel }: { item: Experience; onSave: 
       ].map((f) => (
         <div key={f.key}>
           <label className="block text-[#a3a3a3] text-xs font-medium mb-1">{f.label}</label>
-          <input type="text" value={(form as Record<string, unknown>)[f.key] as string} onChange={(e) => setForm({ ...form, [f.key]: e.target.value })} required
+          <input type="text" value={(form as unknown as Record<string, string>)[f.key]} onChange={(e) => setForm({ ...form, [f.key]: e.target.value })} required
             className="w-full bg-[#0f0f0f] border border-[#2a2a2a] text-white rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-[#c0392b]" />
         </div>
       ))}
@@ -405,7 +405,7 @@ function ProjectForm({ item, onSave, onCancel }: { item: Project; onSave: (v: Pr
       ].map((f) => (
         <div key={f.key}>
           <label className="block text-[#a3a3a3] text-xs font-medium mb-1">{f.label}</label>
-          <input type="text" value={(form as Record<string, unknown>)[f.key] as string} onChange={(e) => setForm({ ...form, [f.key]: e.target.value })}
+          <input type="text" value={(form as unknown as Record<string, string>)[f.key]} onChange={(e) => setForm({ ...form, [f.key]: e.target.value })}
             className="w-full bg-[#0f0f0f] border border-[#2a2a2a] text-white rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-[#c0392b]" />
         </div>
       ))}
@@ -460,7 +460,7 @@ function EducationEditor({ items, onChange }: { items: Education[]; onChange: (v
             ].map((f) => (
               <div key={f.key}>
                 <label className="block text-[#6b6b6b] text-xs mb-1">{f.label}</label>
-                <input type="text" value={(item as Record<string, unknown>)[f.key] as string ?? ""}
+                <input type="text" value={(item as unknown as Record<string, string>)[f.key] ?? ""}
                   onChange={(e) => {
                     const updated = [...items];
                     updated[i] = { ...updated[i], [f.key]: e.target.value || (f.key === "gpa" ? null : e.target.value) };
@@ -505,7 +505,7 @@ function CertsEditor({ items, onChange }: { items: Certification[]; onChange: (v
             ].map((f) => (
               <div key={f.key}>
                 <label className="block text-[#6b6b6b] text-xs mb-1">{f.label}</label>
-                <input type="text" value={(item as Record<string, unknown>)[f.key] as string ?? ""}
+                <input type="text" value={(item as unknown as Record<string, string>)[f.key] ?? ""}
                   onChange={(e) => {
                     const updated = [...items];
                     updated[i] = { ...updated[i], [f.key]: e.target.value || null };

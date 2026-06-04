@@ -12,7 +12,7 @@ export async function GET() {
   if (!session || session.user.role !== "admin") {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
-  const users = getUsers().map(({ password: _, ...u }) => u);
+  const users = (await getUsers()).map(({ password: _, ...u }) => u);
   return NextResponse.json(users);
 }
 
@@ -33,7 +33,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Email already in use" }, { status: 409 });
   }
 
-  if (getUserByEmail(email)) {
+  if (await getUserByEmail(email)) {
     return NextResponse.json({ error: "Email already in use" }, { status: 409 });
   }
 
@@ -47,7 +47,7 @@ export async function POST(req: Request) {
     createdAt: new Date().toISOString(),
   };
 
-  createUser(user);
+  await createUser(user);
   const { password: _, ...safe } = user;
   return NextResponse.json(safe, { status: 201 });
 }
@@ -60,7 +60,7 @@ export async function DELETE(req: Request) {
   }
 
   const { id } = await req.json();
-  const success = deleteUser(id);
+  const success = await deleteUser(id);
   return success
     ? NextResponse.json({ success: true })
     : NextResponse.json({ error: "Not found" }, { status: 404 });

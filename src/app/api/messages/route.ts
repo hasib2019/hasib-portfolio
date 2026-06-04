@@ -18,8 +18,8 @@ export async function GET() {
 
   const messages =
     session.user.role === "admin"
-      ? getMessages()
-      : getMessagesByUser(session.user.id);
+      ? await getMessages()
+      : await getMessagesByUser(session.user.id);
 
   return NextResponse.json(messages);
 }
@@ -45,7 +45,7 @@ export async function POST(req: Request) {
     createdAt: new Date().toISOString(),
   };
 
-  createMessage(msg);
+  await createMessage(msg);
   return NextResponse.json(msg, { status: 201 });
 }
 
@@ -57,7 +57,7 @@ export async function PATCH(req: Request) {
   }
 
   const { id } = await req.json();
-  const success = markMessageRead(id);
+  const success = await markMessageRead(id);
   return success
     ? NextResponse.json({ success: true })
     : NextResponse.json({ error: "Not found" }, { status: 404 });
@@ -71,7 +71,7 @@ export async function DELETE(req: Request) {
   }
 
   const { id } = await req.json();
-  const success = deleteMessage(id);
+  const success = await deleteMessage(id);
   return success
     ? NextResponse.json({ success: true })
     : NextResponse.json({ error: "Not found" }, { status: 404 });

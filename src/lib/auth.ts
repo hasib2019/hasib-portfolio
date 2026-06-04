@@ -32,7 +32,7 @@ export const authOptions: NextAuthOptions = {
         }
 
         // Check regular users
-        const user = getUserByEmail(credentials.email);
+        const user = await getUserByEmail(credentials.email);
         if (!user) return null;
 
         const passwordMatch = await bcrypt.compare(credentials.password, user.password);

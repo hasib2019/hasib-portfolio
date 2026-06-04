@@ -6,7 +6,7 @@ import type { PortfolioData } from "@/lib/types";
 
 export async function GET() {
   try {
-    const data = getPortfolio();
+    const data = await getPortfolio();
     return NextResponse.json(data);
   } catch {
     return NextResponse.json({ error: "Failed to load portfolio" }, { status: 500 });
@@ -21,7 +21,7 @@ export async function PUT(req: Request) {
 
   try {
     const body: PortfolioData = await req.json();
-    savePortfolio(body);
+    await savePortfolio(body);
     return NextResponse.json({ success: true });
   } catch {
     return NextResponse.json({ error: "Failed to save portfolio" }, { status: 500 });

@@ -17,8 +17,8 @@ export async function GET() {
 
   const quotations =
     session.user.role === "admin"
-      ? getQuotations()
-      : getQuotationsByUser(session.user.id);
+      ? await getQuotations()
+      : await getQuotationsByUser(session.user.id);
 
   return NextResponse.json(quotations);
 }
@@ -47,7 +47,7 @@ export async function POST(req: Request) {
     createdAt: new Date().toISOString(),
   };
 
-  createQuotation(q);
+  await createQuotation(q);
   return NextResponse.json(q, { status: 201 });
 }
 
@@ -59,7 +59,7 @@ export async function PATCH(req: Request) {
   }
 
   const { id, status, adminNote } = await req.json();
-  const success = updateQuotationStatus(id, status, adminNote ?? "");
+  const success = await updateQuotationStatus(id, status, adminNote ?? "");
   return success
     ? NextResponse.json({ success: true })
     : NextResponse.json({ error: "Not found" }, { status: 404 });
@@ -72,7 +72,7 @@ export async function DELETE(req: Request) {
   }
 
   const { id } = await req.json();
-  const success = deleteQuotation(id);
+  const success = await deleteQuotation(id);
   return success
     ? NextResponse.json({ success: true })
     : NextResponse.json({ error: "Not found" }, { status: 404 });
